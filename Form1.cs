@@ -2,18 +2,18 @@
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp5
 {
     public partial class Basic_Window : Form
     {
         Point p;
-
+        
         public Basic_Window()
         {
             InitializeComponent();
 
+            backgroundWorker1.RunWorkerAsync();
             timer1.Start();
             timer1.Tick += new EventHandler(timer1_Tick);
 
